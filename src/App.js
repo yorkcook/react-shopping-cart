@@ -20,7 +20,7 @@ function App() {
   };
 
   const removeItem = id => {
-    setCart(cart.filter(book => book.id == !id));
+    setCart(cart.filter(book => book.id !== id));
   };
 
   return (
